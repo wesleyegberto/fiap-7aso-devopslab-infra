@@ -10,7 +10,8 @@ terraform {
 # Configura o Provider Google Cloud com o Projeto
 provider "google" {
 
-  credentials = file("/vagrant/gcpkey.json")
+  # Rodar local
+  # credentials = file("/vagrant/gcpkey.json")
 
   project = "fiap-study"
   region  = "us-west1"
