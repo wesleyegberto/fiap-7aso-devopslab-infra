@@ -14,7 +14,12 @@ provider "google" {
   # credentials = file("/vagrant/gcpkey.json")
 
   project = "fiap-study"
-  region  = "us-west1"
-  zone    = "us-west1-b"
+  region  = "us-central1"
+  zone    = "us-central1-a"
 }
 
+provider "google-beta" {
+  project = "fiap-study"
+  region  = "us-central1"
+  zone    = "us-central1-a"
+}
